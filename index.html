@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Rebelde | La Voz de la Resistencia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+        .on-air { animation: pulse-red 2s infinite; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-mono">
 
+    <nav class="p-6 flex justify-between items-center border-b border-zinc-800">
+        <h1 class="text-2xl font-bold tracking-tighter text-red-600">RADIO_REBELDE_</h1>
+        <div class="flex gap-4 items-center">
+            <span class="on-air w-3 h-3 bg-red-600 rounded-full"></span>
+            <span class="text-xs uppercase tracking-widest">En Vivo</span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto mt-20 p-6 text-center">
+        <header class="mb-12">
+            <h2 class="text-6xl font-black mb-4 italic uppercase">¡No te quedes callado!</h2>
+            <p class="text-zinc-400 text-xl">Transmitiendo la verdad desde la clandestinidad digital.</p>
+        </header>
+
+        <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl shadow-2xl inline-block w-full max-w-md">
+            <div class="mb-6">
+                <p class="text-zinc-500 text-sm mb-1">Escuchando ahora:</p>
+                <p class="text-xl font-bold">Manifiesto #01 - El Inicio</p>
+            </div>
+            
+            <audio controls class="w-full filter invert opacity-80">
+                <source src="tu-stream-o-archivo.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+        </div>
+
+        <section class="grid md:grid-cols-2 gap-8 mt-24 text-left">
+            <div class="border-l-2 border-red-600 pl-4">
+                <h3 class="text-xl font-bold mb-2">Nuestra Misión</h3>
+                <p class="text-zinc-400">Dar voz a los que han sido silenciados. No somos una estación, somos un movimiento.</p>
+            </div>
+            <div class="border-l-2 border-zinc-600 pl-4">
+                <h3 class="text-xl font-bold mb-2">Únete a la Red</h3>
+                <p class="text-zinc-400">Comparte el link, evita el rastreo, mantén la señal viva.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-32 p-10 border-t border-zinc-900 text-center text-zinc-600 text-sm">
+        <p>© 2026 Radio Rebelde - Sin Copyright, solo libertad.</p>
+    </footer>
+
+</body>
+</html>
